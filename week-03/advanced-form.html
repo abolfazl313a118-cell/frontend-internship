@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced HTML Form</title>
+</head>
+<body>
+
+    <h1>فرم ثبت نام دوره برنامه نویسی</h1>
+
+    <form>
+
+        <label for="username">نام کاربری:</label>
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="نام خود را وارد کنید"
+            minlength="3"
+            maxlength="20"
+            required
+        >
+
+        <br><br>
+
+        <label for="email">ایمیل:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+        >
+
+        <br><br>
+
+        <label for="password">رمز عبور:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="6"
+            maxlength="20"
+            required
+        >
+
+        <br><br>
+
+        <label for="course">انتخاب دوره:</label>
+
+        <select id="course" name="course" required>
+
+            <option value="">انتخاب کنید</option>
+
+            <optgroup label="مقدماتی">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+
+            <optgroup label="پیشرفته">
+                <option value="python">Python</option>
+                <option value="react">React</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <label for="description">توضیحات:</label>
+
+        <br>
+
+        <textarea
+            id="description"
+            name="description"
+            rows="5"
+            cols="35"
+            placeholder="توضیحات خود را بنویسید"
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">ارسال فرم</button>
+
+        <button type="reset">پاک کردن</button>
+        </button>
+
+    </form>
+
+</body>
+</html>
